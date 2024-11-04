@@ -26,5 +26,9 @@ public interface SetmealMapper {
     void update(Setmeal setmeal);
 
 
-
+    /**
+     * 新增套餐
+     */
+    @AutoFill(OperationType.INSERT)
+    void insert(Setmeal setmeal);
 }
